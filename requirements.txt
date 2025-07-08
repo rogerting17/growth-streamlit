@@ -6,3 +6,5 @@ requests
 beautifulsoup4
 twstock
 selenium
+lxml
+
