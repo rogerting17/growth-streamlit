@@ -10,7 +10,7 @@ import twstock
 # pip install streamlit pandas numpy plotly requests beautifulsoup4 twstock(套件安裝程式碼)
 
 # CSV 路徑
-csv_path = r"C:\Users\howar\python\New-stock\Goodinfo_年增率_歷年比較_含新產業分類test.csv"
+csv_path = "data.csv"
 
 # 初始化 session staate
 if "data_updated" not in st.session_state:
@@ -30,8 +30,6 @@ def update_data():
     from selenium.webdriver.support.ui import WebDriverWait, Select
     from selenium.webdriver.support import expected_conditions as EC
     import streamlit as st
-
-    csv_path = r"C:\Users\howar\python\New-stock\Goodinfo_年增率_歷年比較_含新產業分類test.csv"
 
     if os.path.exists(csv_path):
         try:
